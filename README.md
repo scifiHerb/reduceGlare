@@ -1,9 +1,9 @@
 # reduceGlare
 ビートセイバーのライティングの眩しさを低減、見えないようにするMOD
-![Beat Saber 2023 10 29 - 22 38 00 07 mp4 2023_10_29 22_52_42](https://github.com/scifiHerb/reduceGlare/assets/109839172/5517b28e-923b-4b89-9c68-1362b68098a7)
-![Beat Saber 2023 10 31 - 18 14 58 06 mp4_snapshot_00 04 949](https://github.com/scifiHerb/reduceGlare/assets/109839172/7034f161-a4cf-4654-809f-5316385ff09e)
-![Beat Saber 2023 10 31 - 18 13 21 05 mp4_snapshot_00 12 282](https://github.com/scifiHerb/reduceGlare/assets/109839172/b8a4fd55-dca6-45ac-abb2-5201c4897a53)
-![Beat Saber 2023_10_31 19_08_13](https://github.com/scifiHerb/reduceGlare/assets/109839172/a613cd8a-0678-4488-9b51-786be8f425b4)
+![Beat Saber 2023 10 29 - 22 38 00 07 mp4_snapshot_10 51 978](https://github.com/scifiHerb/reduceGlare/assets/109839172/d512be98-4387-467a-83c6-9b22503ae9aa)
+![Beat Saber 2023 10 31 - 18 14 58 06 mp4_snapshot_00 04 949](https://github.com/scifiHerb/reduceGlare/assets/109839172/6094c5ec-da71-4626-a4dc-c3c022a9320e)
+![Beat Saber 2023 10 31 - 18 13 21 05 mp4_snapshot_00 12 282](https://github.com/scifiHerb/reduceGlare/assets/109839172/feb5e3a7-2db1-456d-9547-926bd59b10d3)
+![Uploading Beat Saber 2023_10_31 19_08_13.png…]()
 
 # 説明  
 ビートセイバーのライティングを主観視点からのみ見えなくする、もしくは眩しさを低減させるMODです
