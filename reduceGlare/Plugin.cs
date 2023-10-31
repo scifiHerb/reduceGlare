@@ -51,7 +51,7 @@ namespace reduceGlare
 
             //Plugin.Log.Info("count:" + envObjs.Count().ToString());
 
-            if (!settings.Instance.reduceGlare) environment.layer = 3;
+            if (!settings.Instance.onlyReduceGlare) environment.layer = 3;
             foreach (var envObj in envObjs)
             {
                 if (envObj.GetComponent<TubeBloomPrePassLight>() != null)
@@ -59,20 +59,20 @@ namespace reduceGlare
                     var blooms = envObj.GetComponents<TubeBloomPrePassLight>();
                     foreach (var bloom in blooms) bloom.bloomFogIntensityMultiplier = 0;
 
-                    if (!settings.Instance.reduceGlare) envObj.layer = 3;
+                    if (!settings.Instance.onlyReduceGlare) envObj.layer = 3;
 
                 }
                 if (envObj.GetComponent<BloomPrePassBackgroundColorsGradient>() != null)
                 {
                     envObj.GetComponent<BloomPrePassBackgroundColorsGradient>().enabled = false;
-                    if (!settings.Instance.reduceGlare) envObj.layer = 3;
+                    if (!settings.Instance.onlyReduceGlare) envObj.layer = 3;
 
                 }
                 if (envObj.GetComponent<BloomPrePassBackgroundNonLightRenderer>() != null)
                 {
 
                     envObj.GetComponent<BloomPrePassBackgroundNonLightRenderer>().enabled = false;
-                    if (!settings.Instance.reduceGlare) envObj.layer = 3;
+                    if (!settings.Instance.onlyReduceGlare) envObj.layer = 3;
 
                 }
                 if (envObj.layer != 14) continue;
@@ -81,13 +81,13 @@ namespace reduceGlare
                 if (envObj.GetComponent<TrackLaneRing>() != null)
                 {
                     envObj.GetComponent<TrackLaneRing>().enabled = false;
-                    if (!settings.Instance.reduceGlare) envObj.layer = 3;
-                    if (!settings.Instance.reduceGlare) updateAllLayer(envObj.transform, 3);
+                    if (!settings.Instance.onlyReduceGlare) envObj.layer = 3;
+                    if (!settings.Instance.onlyReduceGlare) updateAllLayer(envObj.transform, 3);
 
                 }
             }
 
-            if (!settings.Instance.reduceGlare) updateAllLayer(environment.transform, 3);
+            if (!settings.Instance.onlyReduceGlare) updateAllLayer(environment.transform, 3);
         }
 
         private void updateAllLayer(Transform root, int layer)
@@ -113,7 +113,7 @@ namespace reduceGlare
                 //Plugin.Log.Info(childTransform.name);
 
                 // 子オブジェクトの中にさらに子オブジェクトがある場合、再帰的に処理を続行
-                if (root.name != "PlayersPlace" || !settings.Instance.playersPlace) updateAllLayer(childTransform, layer);
+                if (root.name != "PlayersPlace" || !settings.Instance.savePlayersPlace) updateAllLayer(childTransform, layer);
             }
         }
         #region BSIPA Config

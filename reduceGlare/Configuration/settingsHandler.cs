@@ -19,22 +19,22 @@ namespace reduceGlare.Configuration
                 settings.Instance.modEnable = value;
             }
         }
-        [UIValue("playersPlace")]
-        public bool playersPlace
+        [UIValue("savePlayersPlace")]
+        public bool savePlayersPlace
         {
-            get => settings.Instance.playersPlace;
+            get => settings.Instance.savePlayersPlace;
             set
             {
-                settings.Instance.playersPlace = value;
+                settings.Instance.savePlayersPlace = value;
             }
         }
-        [UIValue("reduceGlare")]
-        public bool reduceGlare
+        [UIValue("onlyReduceGlare")]
+        public bool onlyReduceGlare
         {
-            get => settings.Instance.reduceGlare;
+            get => settings.Instance.onlyReduceGlare;
             set
             {
-                settings.Instance.reduceGlare = value;
+                settings.Instance.onlyReduceGlare = value;
             }
         }
     }

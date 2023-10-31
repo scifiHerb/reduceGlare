@@ -10,7 +10,7 @@ namespace reduceGlare.Configuration
     {
         public static settings Instance = new settings();
         public bool modEnable = true;
-        public bool playersPlace = true;
-        public bool reduceGlare = true;
+        public bool onlyReduceGlare = true;
+        public bool savePlayersPlace = true;
     }
 }
