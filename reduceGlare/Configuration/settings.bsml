@@ -1,0 +1,5 @@
+<settings-container>
+	<checkbox text='Mod Enable' value='modEnable'></checkbox>
+	<checkbox text='Only reduce glare' value='reduceGlare'></checkbox>
+	<checkbox text='Save PlayersPlace' value='playersPlace'></checkbox>
+</settings-container>
